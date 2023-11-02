@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32922.545
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConditionHelper", "ConditionHelper.csproj", "{472281A7-9373-412A-8E8E-5B603857A9D6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExpressionParser", "ExpressionParser\src\ExpressionParser\ExpressionParser.csproj", "{ACA2A63F-45CC-4F4C-91E8-24D476158BAC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{472281A7-9373-412A-8E8E-5B603857A9D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{472281A7-9373-412A-8E8E-5B603857A9D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{472281A7-9373-412A-8E8E-5B603857A9D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{472281A7-9373-412A-8E8E-5B603857A9D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACA2A63F-45CC-4F4C-91E8-24D476158BAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACA2A63F-45CC-4F4C-91E8-24D476158BAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACA2A63F-45CC-4F4C-91E8-24D476158BAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACA2A63F-45CC-4F4C-91E8-24D476158BAC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3A73630E-6103-4BAD-B376-09575B89C13E}
+	EndGlobalSection
+EndGlobal

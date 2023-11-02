@@ -1,0 +1,22 @@
+﻿# -- Entities --
+# entities.entityName.placements.name.*
+# entities.entityName.placements.description.*
+# entities.entityName.attributes.name.*
+# entities.entityName.attributes.description.*
+
+mods.ConditionHelper.name=Condition Helper
+
+# Condition Flag Controller
+entities.ConditionHelper/ConditionFlagController.placements.name.controller=Condition Flag Controller
+entities.ConditionHelper/ConditionFlagController.placements.description.controller=Sets a flag when a certain condition is true.
+entities.ConditionHelper/ConditionFlagController.attributes.description.condition=The condition that must be true to set the flag.
+entities.ConditionHelper/ConditionFlagController.attributes.description.flag=The flag to set.
+entities.ConditionHelper/ConditionFlagController.attributes.description.removeFlag=Whether to unset the flag instead.
+
+# Condition Flag Trigger
+triggers.ConditionHelper/ConditionFlagTrigger.placements.name.trigger=Condition Flag
+triggers.ConditionHelper/ConditionFlagTrigger.placements.description.trigger=Sets a flag when the player enters it, as long as the specified condition is true.
+triggers.ConditionHelper/ConditionFlagTrigger.attributes.description.condition=The condition that must be true to set the flag.
+triggers.ConditionHelper/ConditionFlagTrigger.attributes.description.flag=The flag to set.
+triggers.ConditionHelper/ConditionFlagTrigger.attributes.description.removeFlag=Whether to unset the flag instead.
+triggers.ConditionHelper/ConditionFlagTrigger.attributes.description.onLeave=Whether to activate when the player leaves this trigger, rather than when entering it.

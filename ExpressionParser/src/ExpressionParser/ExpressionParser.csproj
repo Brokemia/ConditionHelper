@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net452</TargetFrameworks>
+    <Version>3.1.0</Version>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <PackageProjectUrl>https://github.com/soukoku/ExpressionParser</PackageProjectUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/soukoku/ExpressionParser</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <Authors>Yin-Chun Wang</Authors>
+    <Company>Yin-Chun Wang</Company>
+    <PackageId>Soukoku.ExpressionParser</PackageId>
+    <Product>Soukoku.ExpressionParser</Product>
+    <Description>Can be used to parse and evaluate simple calculation or boolean expressions.</Description>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>Sign.snk</AssemblyOriginatorKeyFile>
+    <Copyright>Copyright © Yin-Chun Wang 2016</Copyright>
+    <PackageOutputPath>$(OutputPath)</PackageOutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)'=='Release'">
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.ValueTuple" Version="4.5.0" />
+  </ItemGroup>
+  
+  <Target Name="CopyFiles" AfterTargets="Build">
+    <Copy SourceFiles="$(OutputPath)$(AssemblyName).dll" DestinationFolder="../../../bin" />
+    <Copy SourceFiles="$(OutputPath)$(AssemblyName).pdb" DestinationFolder="../../../bin" />
+  </Target>
+
+</Project>
